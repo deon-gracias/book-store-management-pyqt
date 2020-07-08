@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1066</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="searchGroupBox">
+       <property name="title">
+        <string>Search</string>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>511</width>
+          <height>711</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="5" column="0" colspan="3">
+          <widget class="QTableWidget" name="tableWidget"/>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QComboBox" name="searchIsbnBox"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>ISBN: </string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="2">
+          <widget class="QComboBox" name="searchAuthorBox"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Author:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Book:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="2">
+          <widget class="QComboBox" name="searchBookBox"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Publisher:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QComboBox" name="searchPublisherBox"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QPushButton" name="searchButton">
+           <property name="text">
+            <string>Search</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="billingGroupBox">
+       <property name="title">
+        <string>Billing</string>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>511</width>
+          <height>711</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="17" column="1" colspan="2">
+          <widget class="QPushButton" name="checkoutButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(154, 154, 154);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Checkout</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>ISBN:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="QLineEdit" name="billingTotalBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Total:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="billingIsbnBox"/>
+         </item>
+         <item row="14" column="1" colspan="2">
+          <widget class="QPushButton" name="addToCartButton">
+           <property name="text">
+            <string>Add To Cart</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Name of Recipient:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="1" colspan="2">
+          <widget class="QPushButton" name="removeFromCartButton">
+           <property name="text">
+            <string>Remove From Cart</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" rowspan="18">
+          <widget class="QListWidget" name="listWidget"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="billingNameOfRecipientBox"/>
+         </item>
+         <item row="16" column="1" colspan="2">
+          <widget class="QPushButton" name="clearCartButton">
+           <property name="text">
+            <string>Clear Cart</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="bill_id_label">
+           <property name="text">
+            <string>Bill Id: </string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="billingIdBox">
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
