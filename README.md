@@ -1,2 +1,2 @@
-"# Book Store Mangement using pyqt"
-GUI for BookStoreManagement using Python and pyqt library.
+<h1>Book Store Management using PyQt</h1>
+<p></p>
