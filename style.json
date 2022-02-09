@@ -1,0 +1,85 @@
+{
+    "QMainWindow": [
+        {
+            "tittle": "Book Store",
+            "icon": ":icons/icons/book-open.svg",
+            "frameless": false,
+            "transluscentBg": true,
+            "sizeGrip": "size_grip",
+            "shadow": [
+                {
+                    "color": "#fff",
+                    "blurRadius": 20,
+                    "xOffset": 0,
+                    "yOffset": 0,
+                    "centralWidget": "centralwidget"
+                }
+            ],
+            "navigation": [
+                {
+                    "minimize": "",
+                    "close": "",
+                    "restore": [
+                        {
+                            "buttonName": "",
+                            "normalIcon": "",
+                            "maximizedIcon": ""
+                        }
+                    ],
+                    "moveWindow": "",
+                    "tittleBar": ""
+                }
+            ]
+        }
+    ],
+    "QCustomSlideMenu": [
+        {
+            "name": "nav_container",
+            "defaultSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 150,
+                    "height": "parent"
+                }
+            ],
+            "toggleButton": [
+                {
+                    "buttonName": "menu_btn",
+                    "icons": [
+                        {
+                            "whenMenuIsCollapsed": ":/icons/icons/menu.svg",
+                            "whenMenuIsExpanded": ":/icons/icons/x.svg"
+                        }
+                    ],
+                    "style": [
+                        {
+                            "whenMenuIsCollapsed": [
+                                "border: 2px solid transparent"
+                            ],
+                            "whenMenuIsExpanded": [
+                                "border: 2px solid rgb(9, 5, 13)"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 200,
+                    "animationEasingCurve": "Linear"
+                }
+            ]
+        }
+    ]
+}
